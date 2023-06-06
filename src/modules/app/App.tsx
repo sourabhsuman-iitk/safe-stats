@@ -2,7 +2,7 @@ import React from "react";
 import { AppRoutes } from "../home/routes";
 import Sidebar from "../sidebar";
 import Header from "../home/components/header";
-import { QueryClient, QueryClientProvider, useQuery } from "@tanstack/react-query";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const queryClient = new QueryClient();
 
