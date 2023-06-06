@@ -40,7 +40,7 @@ const ContactForm = ({ handleSave, handleChange, title, form }: ContactFormProps
       </div>
       <div className="mb-4">
         <label className="block font-bold mb-2" htmlFor="last-name">
-          Mobile Number
+          Phone
         </label>
         <input
           className="w-full border text-left border-p-light-blue p-2 rounded"

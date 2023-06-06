@@ -23,9 +23,9 @@ const Map = (countries: CountriesData) => {
             <div>
               <h2>{country.country}</h2>
               <p>
-                Active Cases: {country.active} <br />
-                Recovered Cases: {country.recovered} <br />
-                Deaths: {country.deaths}
+                Active cases: {country.active} <br />
+                Recovered cases: {country.recovered} <br />
+                Total deaths: {country.deaths}
               </p>
             </div>
           </Popup>
