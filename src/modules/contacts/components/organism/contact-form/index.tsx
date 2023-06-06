@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { FormDetails, UserStatus } from "../../../types";
 
 interface ContactFormProps {
@@ -6,7 +7,13 @@ interface ContactFormProps {
   title: string;
   form: FormDetails;
 }
-const ContactForm = ({ handleSave, handleChange, title, form }: ContactFormProps) => {
+const ContactForm = ({
+  handleSave,
+  handleChange,
+  title,
+  form,
+}: ContactFormProps) => {
+  const navigate = useNavigate();
   return (
     <div className="w-1/2 mx-auto my-4 pt-16">
       <h2 className="flex justify-center font-bold text-gray-900 py-3 text-2xl">
@@ -87,6 +94,13 @@ const ContactForm = ({ handleSave, handleChange, title, form }: ContactFormProps
         onClick={handleSave}
       >
         Save Contact
+      </button>
+      <br />
+      <button
+        onClick={() => navigate(-1)}
+        className="mt-6 px-2 py-1 border-solid border-2 border-p-navy-blue rounded"
+      >
+        Go back
       </button>
     </div>
   );

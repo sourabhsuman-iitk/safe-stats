@@ -44,7 +44,7 @@ function EditContact() {
     <ContactForm
       handleSave={handleSave}
       handleChange={handleChange}
-      title="Create Contact Screen"
+      title="Edit Contact Screen"
       form={form}
     />
   );
