@@ -26,13 +26,12 @@ const Dashboard = () => {
     labels: [],
     datasets: [],
   });
-  //   console.log(countriesData, chartData);
+
   const countriesDataQuery = useQuery({
     queryKey: ["countries"],
     queryFn: async () => {
       const res = await axios.get("https://disease.sh/v3/covid-19/countries");
       const data = await res.data;
-      console.log(data);
       setCountriesData(data);
       return data;
     },
@@ -44,7 +43,7 @@ const Dashboard = () => {
         "https://disease.sh/v3/covid-19/historical/all?lastdays=all"
       );
       const data = await res.data;
-      console.log(data);
+
       const newChartData = {
         labels: Object.keys(data.cases),
         datasets: [
@@ -74,7 +73,7 @@ const Dashboard = () => {
   });
 
   return (
-    <div className="  w-full pt-20 px-4 pb-8">
+    <div className="flex flex-col w-full pt-20 px-4 pb-8">
       <h2 className="flex justify-center font-bold text-gray-900 py-3 text-2xl">
         Covid Cases Line Graph
       </h2>

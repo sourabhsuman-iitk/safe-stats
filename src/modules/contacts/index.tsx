@@ -29,7 +29,7 @@ const Contacts = () => {
   useEffect(() => {}, [dispatch, allContacts.length]);
 
   return (
-    <div className="justify-center pt-16 text-white  p-4  w-full ">
+    <div className="justify-center pt-16 text-white  p-4  w-full h-full">
       <div className="flex m-4 justify-center">
         <button className="shadow shadow-slate-500 rounded-md font-bold bg-p-navy-blue p-3 text-2xl">
           <Link to="/contact_form">Create Contact</Link>
