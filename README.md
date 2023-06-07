@@ -17,10 +17,9 @@ Build a simple dashboard with:
 of active, recovered cases and deaths in that particular country as a popup.
 
 ## Used below APIs to fetch data and create dashboards.
-World wide data of cases: https://disease.sh/v3/covid-19/all
-Country Specific data of cases: https://disease.sh/v3/covid-19/countries
-Graph data for cases with date:
-https://disease.sh/v3/covid-19/historical/all?lastdays=all
+- World wide data of cases: https://disease.sh/v3/covid-19/all
+- Country Specific data of cases: https://disease.sh/v3/covid-19/countries
+- Graph data for cases with date: https://disease.sh/v3/covid-19/historical/all?lastdays=all
 
 In the project directory, you can run:
 
