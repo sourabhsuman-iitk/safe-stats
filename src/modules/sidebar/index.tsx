@@ -53,6 +53,9 @@ export default function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
               })}
             </ul>
           </div>
+          <div className="flex px-5 text-red-900 font-semibold text-lg underline">
+            <a href="https://github.com/sourabhsuman-iitk/safe-stats-taiyo.ai" target="_blank" rel="noopener noreferrer">Github Repo</a>
+          </div>
         </div>
       </div>
     </div>
